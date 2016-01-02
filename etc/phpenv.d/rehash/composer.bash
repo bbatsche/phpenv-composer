@@ -2,11 +2,11 @@
 #
 # Summary: phpenv composer plugin
 
-cd "$RBENV_ROOT"
+cd "$PHPENV_ROOT"
 make_shims composer versions/*/composer/vendor/bin/*
 
 # for system composer
-composer_cmd=$(RBENV_VERSION=system phpenv which composer 2>/dev/null ||:)
+composer_cmd=$(PHPENV_VERSION=system phpenv which composer 2>/dev/null ||:)
 if [ -n "$composer_cmd" -a -x "$composer_cmd" ]; then
   composer_home=$("$composer_cmd" config -g home)
   composer_bin_dir=$("$composer_cmd" config -g bin-dir)
