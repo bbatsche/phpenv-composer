@@ -11,7 +11,7 @@ This plugin is on the premise of installing https://github.com/phpenv/phpenv or 
 ```console
 $ cd ~/.phpenv/plugins
 $ git clone https://github.com/ngyuki/phpenv-composer.git
-$ ln -fs ../plugins/phpenv-composer/libexec/composer bin
+$ ln -fs ../plugins/phpenv-composer/libexec/composer ../bin
 $ phpenv rehash
 $ phpenv global 5.5.9
 $ composer --version
