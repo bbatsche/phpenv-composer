@@ -1,5 +1,11 @@
 # phpenv composer plugin
 
+## What is this?
+This plugin installs packages globally with `composer global require ...` and these separated by php versions in ~/.phpenv/versions/x.y.z/composer/ instead of ~/.composer/ by default.
+
+## Requirements
+This plugin is on the premise of installing https://github.com/phpenv/phpenv or its forks not https://github.com/CHH/phpenv.
+
 ## Install
 
 ```console
